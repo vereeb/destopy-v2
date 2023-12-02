@@ -1,4 +1,5 @@
 import { vanguard } from '@/app/fonts';
+import Image from 'next/image';
 import Link from 'next/link';
 import { FaStarOfLife } from 'react-icons/fa';
 import { HiCubeTransparent } from 'react-icons/hi';
@@ -6,6 +7,13 @@ import { HiCubeTransparent } from 'react-icons/hi';
 const LandingContainer = () => {
 	return (
 		<section className="w-full min-h-screen flex flex-col items-center justify-center">
+			<Image
+				src="/images/landing-bg.png"
+				alt="dystopi character"
+				fill
+				className="object-cover relative -z-10"
+				priority
+			/>
 			<div className="p-6 flex flex-col items-center justify-center mb-4 lg:mb-16">
 				<h1
 					className={`font-semibold text-7xl md:text-[140px] lg:text-[200px] xl:text-[200px] xl:leading-[220px] 3xl:text-[480x] 3xl:leading-[520px]`}

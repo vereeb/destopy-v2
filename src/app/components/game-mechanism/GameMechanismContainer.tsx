@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { vanguard } from '@/app/fonts';
+import Image from 'next/image';
 
 const GameMechanismContainer = () => {
 	return (
@@ -7,7 +8,14 @@ const GameMechanismContainer = () => {
 			aria-labelledby="game-mechanism-section"
 			className="w-full grid grid-cols-1 xl:grid-cols-2 pb-36"
 		>
-			<div className="mb-20 xl:mb-0 px-[10%] 3xl:px-[24%]">
+			<div className="mb-20 xl:mb-0 px-[10%] 3xl:px-[24%] relative">
+				<Image
+					src="/images/game-mechanism-bg.jpg"
+					alt="dystopi game mechanism"
+					fill
+					className="object-cover relative -z-10 brightness-[0.35]"
+				/>
+
 				<h2
 					className={`${vanguard.className} text-6xl md:text-7xl lg:text-9xl 3xl:text-[12rem] mb-10 lg:mb-16`}
 					id="game-mechanism-section"

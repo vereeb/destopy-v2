@@ -7,6 +7,8 @@ import GameMechanismContainer from './components/game-mechanism/GameMechanismCon
 import WhitePaperContainer from './components/white-paper/WhitePaperContainer';
 import SocialIconsContainer from './components/social-icons/SocialIconsContainer';
 import RoadmapContainer from './components/roadmap/Roadmap';
+import Footer from './components/Footer';
+import GalleryContainer from './components/gallery-container/GalleryContainer';
 
 export default function Home() {
 	return (
@@ -18,7 +20,9 @@ export default function Home() {
 			<TokenomicsContainer />
 			<TeamContainer />
 			<RoadmapContainer />
+			<GalleryContainer />
 			<WhitePaperContainer />
+			<Footer />
 		</main>
 	);
 }

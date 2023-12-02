@@ -33,8 +33,7 @@ const TeamCard = ({
 			<Image
 				width={144}
 				height={144}
-				className="rounded-full border-2 border-dystopi-yellow"
-				objectFit="cover"
+				className="object-cover rounded-full border-2 border-dystopi-yellow"
 				src={imageUrl}
 				alt={name}
 			/>
@@ -63,7 +62,13 @@ const TeamCard = ({
 
 const TeamContainer = () => {
 	return (
-		<section className="3xl:max-w-[80%] pl-[24px] lg:pl-[10%] 3xl:pl-[1%] pr-[4%] w-full py-32 3xl:py-64">
+		<section className="3xl:max-w-[80%] pl-[24px] lg:pl-[10%] 3xl:pl-[1%] pr-[4%] w-full py-32 3xl:py-64 relative">
+			<Image
+				src="/images/nft-bg.png"
+				alt="dystopi game mechanism"
+				fill
+				className="lg:hidden max-h-[50%] object-cover absolute top-0 right-0 -z-10 brightness-[0.35] transform translate-x-32 translate-y-32 scale-x-[-1]"
+			/>
 			<h2
 				className={`${vanguard.className} mb-12 lg:mb-24 2xl:mb-0 font-semibold text-7xl lg:text-9xl 3xl:text-[12rem] text-dystopi-yellow`}
 			>

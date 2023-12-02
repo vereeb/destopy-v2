@@ -7,12 +7,12 @@ const WhitePaperContainer = () => {
 	return (
 		<section
 			aria-labelledby="white-paper-section"
-			className="w-full relative grid grid-cols-1 xl:grid-cols-2 py-20"
+			className="w-full relative z-10 grid grid-cols-1 xl:grid-cols-2 py-20"
 		>
 			<div className="relative mb-20 xl:mb-0 px-[8%] 3xl:px-[20%] pt-28 3xl:pt-56">
 				<Image
-					className="min-h-[100vh] -z-10 filter brightness-50"
-					src="/bg-dark-temp.png"
+					className="object-cover min-h-[100vh] -z-10 filter brightness-50"
+					src="/images/whitepaper-bg.png"
 					fill
 					alt="dystopi city"
 				/>

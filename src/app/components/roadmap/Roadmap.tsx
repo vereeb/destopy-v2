@@ -41,6 +41,8 @@ type RoadmapProps = {
 	zIndex: string;
 	finishedTitle: string;
 	plannedTitle: string;
+	image: string;
+	className?: string;
 };
 
 const RoadmapCard = ({
@@ -49,14 +51,16 @@ const RoadmapCard = ({
 	finishedListItems,
 	plannedListItems,
 	index,
-	zIndex
+	zIndex,
+	image,
+	className = ''
 }: RoadmapProps) => (
 	<div
 		className={`flex ${zIndex} relative ${
 			index % 2 === 0
 				? 'flex-row-reverse lg:flex-row transform -translate-y-48 lg:-translate-y-0'
 				: 'flex-row-reverse'
-		} items-start justify-start h-[60vh] w-full md:w-[75vw] mb-12 md:mb-24`}
+		} items-start justify-start h-[60vh] w-full lg:w-[75vw] mb-12 lg:mb-24 ${className}`}
 	>
 		<div
 			className={`${
@@ -77,7 +81,7 @@ const RoadmapCard = ({
 			className={`bg-gradient-to-b ${
 				index % 2 === 0
 					? 'from-dystopi-yellow to-dystopi-yellow/0'
-					: 'from-dystopi-sand to-dystopi-sandfrom-dystopi-sand/0'
+					: 'from-dystopi-sand to-dystopi-sand/0'
 			} w-10 md:w-20 3xl:w-40 h-[90vh] ${
 				index % 2 === 0 ? 'mr-4 md:mr-16' : 'mr-4 md:ml-16'
 			}`}
@@ -91,10 +95,10 @@ const RoadmapCard = ({
 
 		<div className="hidden lg:block relative w-full h-full">
 			<Image
-				src="/bg-dark-temp.png"
+				src={`/images/${image}`}
 				alt={`dystopi roadmap phase ${index}`}
 				fill
-				objectFit="cover"
+				className="object-cover"
 			/>
 		</div>
 	</div>
@@ -102,7 +106,14 @@ const RoadmapCard = ({
 
 const RoadmapContainer = () => {
 	return (
-		<section className="w-full px-6 md:px-[10%] pb-16">
+		<section className="w-full px-6 md:px-[10%] pb-16 relative">
+			<Image
+				src="/images/roadmap-bg.png"
+				alt="dystopi game mechanism"
+				fill
+				className="object-cover relative -z-10 brightness-[0.35] lg:hidden"
+			/>
+
 			<h2
 				className={`${vanguard.className} mb-64 lg:mb-24 2xl:mb-0 font-semibold text-7xl lg:text-9xl 3xl:text-[12rem] text-dystopi-yellow`}
 			>
@@ -118,6 +129,7 @@ const RoadmapContainer = () => {
 						plannedListItems={phaseZeroPlannedListItems}
 						index={0}
 						zIndex="z-40"
+						image="roadmap-phase-0-bg.jpg"
 					/>
 					<RoadmapCard
 						finishedTitle="IN PROGRESS"
@@ -126,6 +138,7 @@ const RoadmapContainer = () => {
 						plannedListItems={phaseOnePlannedListItems}
 						index={1}
 						zIndex="z-30"
+						image="roadmap-phase-1-bg.png"
 					/>
 				</div>
 				<div className="flex items-start flex-row lg:flex-col justify-center">
@@ -136,6 +149,8 @@ const RoadmapContainer = () => {
 						plannedListItems={phaseTwoPlannedListItems}
 						index={2}
 						zIndex="z-20"
+						image="roadmap-phase-2-bg.png"
+						className="translate-x-1 sm:translate-x-6 lg:translate-x-0"
 					/>
 					<RoadmapCard
 						finishedTitle="PLANNED"
@@ -144,6 +159,8 @@ const RoadmapContainer = () => {
 						plannedListItems={phaseThirdPlannedListItems}
 						index={3}
 						zIndex="z-10"
+						image="game-mechanism-bg.jpg"
+						className="translate-x-2 sm:translate-x-5 lg:translate-x-0"
 					/>
 				</div>
 			</div>

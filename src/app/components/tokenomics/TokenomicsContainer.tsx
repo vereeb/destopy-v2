@@ -1,4 +1,5 @@
 import { vanguard } from '@/app/fonts';
+import Image from 'next/image';
 
 type TokenomicCardProps = {
 	category: string;
@@ -49,8 +50,18 @@ const TokenomicsContainer = () => {
 	return (
 		<section
 			aria-labelledby="tokenomics-container-title"
-			className="3xl:max-w-[80%] w-full grid grid-cols-1 lg:grid-cols-2 px-4 md:px-[10%] 3xl:px-[1%] py-16 lg:py-36"
+			className="relative 3xl:max-w-[80%] w-full grid grid-cols-1 lg:grid-cols-2 px-4 md:px-[10%] 3xl:px-[1%] py-16 lg:py-36"
 		>
+			<div className="absolute -z-20 w-full h-full">
+				<Image
+					src="/images/tokenomics-bg.png"
+					alt="dystopi tokemonics"
+					fill
+					className="object-cover brightness-[0.35] lg:brightness-50"
+				/>
+				<div className="hidden lg:block absolute w-2/3 h-full z-10 right-0 bg-gradient-to-r from-dystopi-black/0 via-dystopi-black/80 to-dystopi-black/100"></div>
+			</div>
+
 			<div>
 				<h2
 					className={`${vanguard.className} font-semibold text-6xl md:text-7xl lg:text-9xl 3xl:text-[12rem]`}
