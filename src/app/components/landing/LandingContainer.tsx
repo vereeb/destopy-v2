@@ -60,6 +60,7 @@ const LandingContainer = () => {
 						// width={247}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/Binance.png"
@@ -70,6 +71,7 @@ const LandingContainer = () => {
 						// width={310}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/Certik.png"
@@ -80,6 +82,7 @@ const LandingContainer = () => {
 						// width={247}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/CoinVeda.webp"
@@ -90,6 +93,7 @@ const LandingContainer = () => {
 						// width={176}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/Dexview.png"
@@ -100,6 +104,7 @@ const LandingContainer = () => {
 						// width={271}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/EDNS domains.png"
@@ -110,6 +115,7 @@ const LandingContainer = () => {
 						// width={76}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/Esport manager.webp"
@@ -120,6 +126,7 @@ const LandingContainer = () => {
 						// width={257}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/Everdome.png"
@@ -130,6 +137,7 @@ const LandingContainer = () => {
 						// width={87}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/Gamerland.png"
@@ -140,6 +148,7 @@ const LandingContainer = () => {
 						// width={249}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/GURA.png"
@@ -150,6 +159,7 @@ const LandingContainer = () => {
 						// width={344}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/Iam IT.png"
@@ -160,6 +170,7 @@ const LandingContainer = () => {
 						// width={262}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/Metaplayers.png"
@@ -170,6 +181,7 @@ const LandingContainer = () => {
 						// width={88}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/Mindtech Apps.png"
@@ -180,6 +192,7 @@ const LandingContainer = () => {
 						// width={70}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/PancakeSwap.png"
@@ -190,6 +203,7 @@ const LandingContainer = () => {
 						// width={412}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/PinkSale.png"
@@ -200,6 +214,7 @@ const LandingContainer = () => {
 						// width={205}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/Platinum Crypto Academy.png"
@@ -210,6 +225,7 @@ const LandingContainer = () => {
 						// width={168}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 					<Image
 						src="/images/landing-logos/UIG Studio.png"
@@ -220,6 +236,7 @@ const LandingContainer = () => {
 						// width={45}
 						// height={64}
 						className="max-h-6 mx-8"
+						priority
 					/>
 				</Marquee>
 			</div>

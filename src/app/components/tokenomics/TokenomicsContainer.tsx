@@ -91,7 +91,7 @@ const TokenomicsContainer = () => {
 					/>
 					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
 						<p className="text-dystopi-yellow text-center text-sm md:text-base 3xl:text-3xl">
-							10 000 000 000
+							1 0000 000 000
 						</p>
 						<p className="text-dystopi-yellow text-center text-sm md:text-base 3xl:text-3xl">
 							tokens
@@ -107,7 +107,7 @@ const TokenomicsContainer = () => {
 						color="text-[#5B7DBE]"
 						percent="1"
 						subtext="10 000 000 tokens"
-						text="5% TGE then 1/100 Weekly"
+						text="5% after Public sale 100 Weeks WLV"
 						margin="sm:ml-[1.5ch]"
 					/>
 					<TokenomicCard
@@ -115,22 +115,22 @@ const TokenomicsContainer = () => {
 						color="text-[#E0C3DE]"
 						percent="0.5"
 						subtext="5 000 000 tokens"
-						text="5% TGE then 1/35 Weekly"
+						text="35 WeeksW LV"
 					/>
 					<TokenomicCard
 						category="Strategic"
 						color="text-[#E0463C]"
 						percent="5"
-						subtext="5 000 0000 tokens"
-						text="5% TGE then 1/100 Weekly"
+						subtext="50 000 000 tokens"
+						text="5% after Public sale then 100 Weeks WLV"
 						margin="sm:ml-[1.5ch]"
 					/>
 					<TokenomicCard
 						category="Development"
 						color="text-[#FFB800]"
 						percent="5"
-						subtext="5 000 0000 tokens"
-						text="1/100 Weekly"
+						subtext="50 000 000 tokens"
+						text="100 Weeks WLV"
 						margin="sm:ml-[1.5ch]"
 					/>
 					<TokenomicCard
@@ -146,7 +146,7 @@ const TokenomicsContainer = () => {
 						color="text-[#E9702C]"
 						percent="2,5"
 						subtext="25 000 000 tokens"
-						text="5% TGE then 1/100 Weekly"
+						text="100 Weeks WLV"
 					/>
 					<TokenomicCard
 						category="Liquidity"
@@ -169,22 +169,22 @@ const TokenomicsContainer = () => {
 						color="text-[#F7D052]"
 						percent="1"
 						subtext="10 000 000 tokens"
-						text="52 Week cliff, then 1/100 Weekly"
+						text="52 Week cliff, then 100 Weeks WLV"
 						margin="sm:ml-[1.5ch]"
 					/>
 					<TokenomicCard
 						category="Team"
 						color="text-[#E67C74]"
-						percent="10"
-						subtext="10 000 000 tokens"
-						text="52 Week cliff, then 1/100 Weekly"
+						percent="9"
+						subtext="90 000 000 tokens"
+						text="52 Week cliff, then 100 Weeks WLV"
 						margin="sm:ml-[0.5ch]"
 					/>
 					<TokenomicCard
 						category="Airdrop"
 						color="text-[#7CC387]"
-						percent="1"
-						subtext="10 000 000 tokens"
+						percent="2"
+						subtext="20 000 000 tokens"
 						text="No vesting"
 						margin="sm:ml-[1.5ch]"
 					/>

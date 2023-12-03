@@ -1,5 +1,5 @@
 import { vanguard } from '@/app/fonts';
-import { FaLinkedin, FaUser } from 'react-icons/fa';
+import { FaArtstation, FaLinkedin, FaUser } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -12,10 +12,24 @@ type TeamCardProps = {
 	hasBorder?: boolean;
 };
 
-const UserIconWithDecor = () => (
+type UserIconWithLinkProps = {
+	linkUrl: string;
+	iconType: 'linkedIn' | 'artStation';
+};
+
+const UserIconWithArtStationLink = ({
+	linkUrl,
+	iconType
+}: UserIconWithLinkProps) => (
 	<div className="relative">
-		<FaUser size={48} />
-		<div className="bg-dystopi-black absolute bottom-0 left-1/2 w-3 h-3 transform -translate-x-1/2"></div>
+		<Link target="_blank" href={linkUrl}>
+			<FaUser size={48} />
+			{iconType === 'artStation' ? (
+				<FaArtstation className="bg-dystopi-black absolute bottom-0 left-1/2 p-0.5 w-4 h-4 transform -translate-x-1/2"></FaArtstation>
+			) : (
+				<FaLinkedin className="bg-dystopi-sand text-dystopi-black absolute bottom-0 left-1/2 w-4 h-4 transform -translate-x-1/2"></FaLinkedin>
+			)}
+		</Link>
 	</div>
 );
 
@@ -181,11 +195,38 @@ const TeamContainer = () => {
 							ART DEPARTMENT
 						</p>
 
-						<div className="grid grid-cols-4 gap-2">
-							<UserIconWithDecor />
-							<UserIconWithDecor />
-							<UserIconWithDecor />
-							<UserIconWithDecor />
+						<div className="grid grid-cols-7 gap-2">
+							<UserIconWithArtStationLink
+								iconType="artStation"
+								linkUrl="https://www.artstation.com/everlite"
+							/>
+							<UserIconWithArtStationLink
+								iconType="artStation"
+								linkUrl="https://www.artstation.com/nikitavasilkov"
+							/>
+							<UserIconWithArtStationLink
+								iconType="artStation"
+								linkUrl="https://www.artstation.com/gundandras"
+							/>
+							<UserIconWithArtStationLink
+								iconType="artStation"
+								linkUrl="https://www.artstation.com/dsmile"
+							/>
+							<UserIconWithArtStationLink
+								iconType="artStation"
+								linkUrl="https://www.artstation.com/bescarellus"
+							/>
+							<UserIconWithArtStationLink
+								iconType="artStation"
+								linkUrl="https://www.artstation.com/tiger_999"
+							/>
+							<UserIconWithArtStationLink
+								iconType="artStation"
+								linkUrl="https://www.artstation.com/guraziu"
+							/>
+							<FaUser size={48} />
+							<FaUser size={48} />
+							<FaUser size={48} />
 							<FaUser size={48} />
 							<FaUser size={48} />
 							<FaUser size={48} />
@@ -198,12 +239,31 @@ const TeamContainer = () => {
 							DEVELOPMENT TEAM
 						</p>
 
-						<div className="grid grid-cols-5 gap-2">
-							<UserIconWithDecor />
-							<UserIconWithDecor />
-							<UserIconWithDecor />
-							<UserIconWithDecor />
-							<UserIconWithDecor />
+						<div className="grid grid-cols-6 gap-2">
+							<UserIconWithArtStationLink
+								iconType="linkedIn"
+								linkUrl="https://www.linkedin.com/in/g%C3%A1sp%C3%A1r-huba-4a588249/"
+							/>
+							<UserIconWithArtStationLink
+								iconType="linkedIn"
+								linkUrl="https://www.linkedin.com/in/m%C3%A1rton-volosin-5b1569112/"
+							/>
+							<UserIconWithArtStationLink
+								iconType="linkedIn"
+								linkUrl="https://www.linkedin.com/in/pannapetrazsoldos/"
+							/>
+							<UserIconWithArtStationLink
+								iconType="linkedIn"
+								linkUrl="https://www.linkedin.com/in/%C3%A1d%C3%A1m-farkas-732977143/"
+							/>
+							<UserIconWithArtStationLink
+								iconType="linkedIn"
+								linkUrl="https://www.linkedin.com/in/mil%C3%A1n-n%C3%A9ninger-bb2030a5/"
+							/>
+							<UserIconWithArtStationLink
+								iconType="linkedIn"
+								linkUrl="https://www.linkedin.com/in/mark-ertinger-b434b913a/"
+							/>
 							<FaUser size={48} />
 							<FaUser size={48} />
 							<FaUser size={48} />
@@ -217,9 +277,11 @@ const TeamContainer = () => {
 						</p>
 
 						<div className="grid grid-cols-5 gap-2">
-							<UserIconWithDecor />
-							<UserIconWithDecor />
-							<UserIconWithDecor />
+							<UserIconWithArtStationLink
+								iconType="linkedIn"
+								linkUrl="https://www.linkedin.com/in/sztan%C3%B3-csaba-46684297/"
+							/>
+							<FaUser size={48} />
 						</div>
 					</div>
 				</div>
