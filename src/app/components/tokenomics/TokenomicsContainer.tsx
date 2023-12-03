@@ -63,21 +63,39 @@ const TokenomicsContainer = () => {
 			</div>
 
 			<div>
-				<h2
-					className={`${vanguard.className} font-semibold text-6xl md:text-7xl lg:text-9xl 3xl:text-[12rem]`}
-					id="tokenomics-container-title"
-				>
-					TOKENOMICS
-				</h2>
-				<div className="flex items-end justify-start gap-2">
-					<p
-						className={`${vanguard.className} font-semibold text-4xl md:text-5xl lg:text-7xl 3xl:text-9xl text-dystopi-yellow`}
+				<div>
+					<h2
+						className={`${vanguard.className} font-semibold text-6xl md:text-7xl lg:text-9xl 3xl:text-[12rem]`}
+						id="tokenomics-container-title"
 					>
-						1MLN
-					</p>
-					<div className="text-xs md:text-sm 3xl:text-3xl">
-						<p>Total Supply</p>
-						<p className="text-dystopi-yellow">TOKENS</p>
+						TOKENOMICS
+					</h2>
+					<div className="flex items-end justify-start gap-2">
+						<p
+							className={`${vanguard.className} font-semibold text-4xl md:text-5xl lg:text-7xl 3xl:text-9xl text-dystopi-yellow`}
+						>
+							1MLN
+						</p>
+						<div className="text-xs md:text-sm 3xl:text-3xl">
+							<p>Total Supply</p>
+							<p className="text-dystopi-yellow">TOKENS</p>
+						</div>
+					</div>
+				</div>
+				<div className="relative">
+					<Image
+						width={800}
+						height={800}
+						src="/images/Diagram-01.svg"
+						alt="dystopi token supply chart"
+					/>
+					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+						<p className="text-dystopi-yellow text-center text-sm md:text-base 3xl:text-3xl">
+							10 000 000 000
+						</p>
+						<p className="text-dystopi-yellow text-center text-sm md:text-base 3xl:text-3xl">
+							tokens
+						</p>
 					</div>
 				</div>
 			</div>
