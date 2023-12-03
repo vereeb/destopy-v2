@@ -30,7 +30,11 @@ const WhitePaperContainer = () => {
 					collect unique digital assets, while engaging in a battle
 					against alien invaders.
 				</p>
-				<Link className="font-semibold 3xl:text-3xl" href="/">
+				<Link
+					target="_blank"
+					className="font-semibold 3xl:text-3xl"
+					href="https://dystopi.gitbook.io/dystopi-whitepaper-1/"
+				>
 					/ CHECK WHITEPAPER /
 				</Link>
 			</div>
@@ -47,7 +51,8 @@ const WhitePaperContainer = () => {
 							#plot
 						</p>
 						<Link
-							href="/"
+							target="_blank"
+							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/what-is-dystopi"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
 						>
 							<MdOutlineArrowForward
@@ -72,7 +77,8 @@ const WhitePaperContainer = () => {
 							#game_mechanics
 						</p>
 						<Link
-							href="/"
+							target="_blank"
+							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/game-pillars"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
 						>
 							<MdOutlineArrowForward
@@ -91,7 +97,8 @@ const WhitePaperContainer = () => {
 							#dyseum
 						</p>
 						<Link
-							href="/"
+							target="_blank"
+							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/tokenomics"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
 						>
 							<MdOutlineArrowForward
@@ -116,7 +123,8 @@ const WhitePaperContainer = () => {
 							#target
 						</p>
 						<Link
-							href="/"
+							target="_blank"
+							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/market-research"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
 						>
 							<MdOutlineArrowForward
@@ -135,7 +143,8 @@ const WhitePaperContainer = () => {
 							#phases
 						</p>
 						<Link
-							href="/"
+							target="_blank"
+							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/roadmap"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
 						>
 							<MdOutlineArrowForward
@@ -157,7 +166,8 @@ const WhitePaperContainer = () => {
 							#partners
 						</p>
 						<Link
-							href="/"
+							target="_blank"
+							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/team"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
 						>
 							<MdOutlineArrowForward

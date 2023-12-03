@@ -16,7 +16,7 @@ const DecorCircle = () => (
 				cy="183.169"
 				r="181.169"
 				stroke="#FFB800"
-				strokeWidth="4"
+				strokeWidth="3"
 			/>
 			<line
 				x1="307.047"
@@ -24,7 +24,7 @@ const DecorCircle = () => (
 				x2="389.032"
 				y2="398.132"
 				stroke="#FFB800"
-				strokeWidth="4"
+				strokeWidth="3"
 			/>
 			<circle cx="390.211" cy="399.547" r="12.4534" fill="#FFB800" />
 		</svg>
@@ -36,7 +36,9 @@ type NftCharacterProps = {
 };
 
 const NftCharacter = ({ className }: NftCharacterProps) => (
-	<div className={`relative lg:min-w-[512px] lg:right-24 ${className}`}>
+	<div
+		className={`mb-40 md:mb-64 lg:mb-0 relative lg:min-w-[512px] lg:right-24 ${className}`}
+	>
 		<div className="absolute -top-4 lg:top-24 left-4 lg:left-auto right-auto lg:-right-24 flex flex-col items-start justify-start">
 			<div className="flex items-baseline justify-start font-bold">
 				<p
@@ -57,6 +59,13 @@ const NftCharacter = ({ className }: NftCharacterProps) => (
 			width={512}
 			height={869}
 			className="lg::max-w-sm xl:max-w-xl"
+		/>
+		<Image
+			src="/images/nft-pants-and-shoulder.png"
+			alt="dystopi nft character"
+			width={770}
+			height={821}
+			className="absolute top-3/4 lg:top-1/2  right-1/2 lg:right-full transform translate-x-1/2 md:translate-x-1/3 lg:translate-x-[6%] -translate-y-1/4 lg::max-w-sm xl:max-w-lg"
 		/>
 		<p
 			className={`${vanguard.className} text-3xl lg:text-5xl font-bold absolute right-0 md:right-12 lg:-right-24 bottom-auto lg:bottom-24 top-0 lg:top-auto`}

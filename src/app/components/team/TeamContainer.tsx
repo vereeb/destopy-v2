@@ -1,12 +1,14 @@
 import { vanguard } from '@/app/fonts';
 import { FaLinkedin, FaUser } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type TeamCardProps = {
 	imageUrl: string;
 	name: string;
 	rank: string;
 	experiences: string[];
+	linkedInUrl?: string;
 	hasBorder?: boolean;
 };
 
@@ -22,7 +24,8 @@ const TeamCard = ({
 	hasBorder,
 	imageUrl,
 	name,
-	rank
+	rank,
+	linkedInUrl
 }: TeamCardProps) => (
 	<div
 		className={`mb-8 lg:mb-0 ${
@@ -47,7 +50,11 @@ const TeamCard = ({
 					{rank}
 				</p>
 
-				<FaLinkedin className="w-4 h-4 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
+				{linkedInUrl && (
+					<Link target="_blank" href={linkedInUrl}>
+						<FaLinkedin className="w-4 h-4 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
+					</Link>
+				)}
 			</div>
 		</div>
 		<ul className="text-[10px] md:text-sm lg:text-base 3xl:text-3xl list-disc list-outside text-dystopi-yellow">
@@ -89,9 +96,10 @@ const TeamContainer = () => {
 									'6+ years in crypto'
 								]}
 								hasBorder={true}
-								imageUrl="/kralik.png"
+								imageUrl="/images/team/Bence.jpg"
 								name="BENCE VEREBELYI"
 								rank="Founder & CEO"
+								linkedInUrl="https://www.linkedin.com/in/vereeb-dystopi/"
 							/>
 							<TeamCard
 								experiences={[
@@ -99,18 +107,20 @@ const TeamContainer = () => {
 									'6+ years in leadership'
 								]}
 								hasBorder={true}
-								imageUrl="/kralik.png"
+								imageUrl="/images/team/Patrik.jpg"
 								name="PATRIK SZABO"
 								rank="Founder & COO"
+								linkedInUrl="https://www.linkedin.com/in/szabó-patrik-a59b20244/"
 							/>
 							<TeamCard
 								experiences={[
 									'5+ years in hedge fund management',
 									'Crypto investor for 7years'
 								]}
-								imageUrl="/kralik.png"
+								imageUrl="/images/team/Richy Rich E_edit.jpg"
 								name="RICHARD BARATH"
 								rank="Co-Founder & CFO"
+								linkedInUrl="https://www.linkedin.com/in/richard-barath-958799264/"
 							/>
 						</div>
 					</div>
@@ -128,7 +138,7 @@ const TeamContainer = () => {
 										'6+ years in crypto'
 									]}
 									hasBorder={true}
-									imageUrl="/kralik.png"
+									imageUrl="/images/team/Marci.jpg"
 									name="MARCELL LAPOS"
 									rank="Co-Founder & Game Mechanics"
 								/>
@@ -137,9 +147,10 @@ const TeamContainer = () => {
 										'10+ years of developer XP',
 										'CEO of Mindtech Apps'
 									]}
-									imageUrl="/kralik.png"
+									imageUrl="/images/team/Kralikphd.jpg"
 									name="TAMAS KRALIK"
 									rank="CTO"
+									linkedInUrl="https://www.linkedin.com/in/kralik-tamas-08a911a3/"
 								/>
 							</div>
 
@@ -154,7 +165,7 @@ const TeamContainer = () => {
 											'25 years of experience in drawing',
 											'Professional artists since 2015'
 										]}
-										imageUrl="/kralik.png"
+										imageUrl="/images/team/Beregi.jpg"
 										name="BENCE BEREGI"
 										rank="Art Director"
 									/>
