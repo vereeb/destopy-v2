@@ -22,7 +22,7 @@ const UserIconWithArtStationLink = ({
 	iconType
 }: UserIconWithLinkProps) => (
 	<div className="relative">
-		<Link target="_blank" href={linkUrl}>
+		<Link target="_blank" href={linkUrl} prefetch={false}>
 			<FaUser size={48} />
 			{iconType === 'artStation' ? (
 				<FaArtstation className="bg-dystopi-black absolute bottom-0 left-1/2 p-0.5 w-4 h-4 transform -translate-x-1/2"></FaArtstation>
@@ -65,7 +65,7 @@ const TeamCard = ({
 				</p>
 
 				{linkedInUrl && (
-					<Link target="_blank" href={linkedInUrl}>
+					<Link target="_blank" href={linkedInUrl} prefetch={false}>
 						<FaLinkedin className="w-4 h-4 lg:w-6 lg:h-6 2xl:w-8 2xl:h-8" />
 					</Link>
 				)}

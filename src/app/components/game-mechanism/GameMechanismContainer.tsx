@@ -76,6 +76,7 @@ const GameMechanismContainer = () => {
 							<Link
 								href="/"
 								className="min-w-[12ch] mt-auto font-semibold mb-0"
+								prefetch={false}
 							>
 								/ READ MORE /
 							</Link>
@@ -97,6 +98,7 @@ const GameMechanismContainer = () => {
 							<Link
 								href="/"
 								className="min-w-[12ch] mt-auto font-semibold mb-0"
+								prefetch={false}
 							>
 								/ READ MORE /
 							</Link>
@@ -118,6 +120,7 @@ const GameMechanismContainer = () => {
 							<Link
 								href="/"
 								className="min-w-[12ch] mt-auto font-semibold mb-0"
+								prefetch={false}
 							>
 								/ READ MORE /
 							</Link>

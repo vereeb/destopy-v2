@@ -5,25 +5,42 @@ import Link from 'next/link';
 const SocialIconsContainer = () => {
 	return (
 		<aside className="gap-8 flex flex-row lg:flex-col text-dystopi-sand mix-blend-difference fixed bottom-6 lg:bottom-auto right-1/2 transform translate-x-1/2 lg:translate-x-0 lg:top-60 lg:right-6 z-30">
-			<Link target="_blank" href="https://t.me/dystopicommunity">
+			<Link
+				target="_blank"
+				href="https://t.me/dystopicommunity"
+				prefetch={false}
+			>
 				<FaTelegram size={24} className="mb-4 3xl-mb-8" />
 			</Link>
 
-			<Link target="_blank" href="https://medium.com/@DYSTOPI">
+			<Link
+				target="_blank"
+				href="https://medium.com/@DYSTOPI"
+				prefetch={false}
+			>
 				<FaMedium size={24} className="mb-4 3xl-mb-8" />
 			</Link>
 
-			<Link target="_blank" href="https://discord.gg/zzt4zzYFC4">
+			<Link
+				target="_blank"
+				href="https://discord.gg/zzt4zzYFC4"
+				prefetch={false}
+			>
 				<FaDiscord size={24} className="mb-4 3xl-mb-8" />
 			</Link>
 
-			<Link target="_blank" href="https://twitter.com/DystopiWorld">
+			<Link
+				target="_blank"
+				href="https://twitter.com/DystopiWorld"
+				prefetch={false}
+			>
 				<FaTwitter size={24} className="mb-4 3xl-mb-8" />
 			</Link>
 
 			<Link
 				target="_blank"
 				href="https://www.instagram.com/dystopi.world/"
+				prefetch={false}
 			>
 				<BiLogoInstagramAlt size={24} className="mb-4 3xl-mb-8" />
 			</Link>

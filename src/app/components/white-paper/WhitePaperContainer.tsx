@@ -34,6 +34,7 @@ const WhitePaperContainer = () => {
 					target="_blank"
 					className="font-semibold 3xl:text-3xl"
 					href="https://dystopi.gitbook.io/dystopi-whitepaper-1/"
+					prefetch={false}
 				>
 					/ CHECK WHITEPAPER /
 				</Link>
@@ -54,6 +55,7 @@ const WhitePaperContainer = () => {
 							target="_blank"
 							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/what-is-dystopi"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
+							prefetch={false}
 						>
 							<MdOutlineArrowForward
 								size={24}
@@ -80,6 +82,7 @@ const WhitePaperContainer = () => {
 							target="_blank"
 							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/game-pillars"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
+							prefetch={false}
 						>
 							<MdOutlineArrowForward
 								size={24}
@@ -100,6 +103,7 @@ const WhitePaperContainer = () => {
 							target="_blank"
 							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/tokenomics"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
+							prefetch={false}
 						>
 							<MdOutlineArrowForward
 								size={24}
@@ -126,6 +130,7 @@ const WhitePaperContainer = () => {
 							target="_blank"
 							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/market-research"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
+							prefetch={false}
 						>
 							<MdOutlineArrowForward
 								size={24}
@@ -146,6 +151,7 @@ const WhitePaperContainer = () => {
 							target="_blank"
 							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/roadmap"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
+							prefetch={false}
 						>
 							<MdOutlineArrowForward
 								size={24}
@@ -169,6 +175,7 @@ const WhitePaperContainer = () => {
 							target="_blank"
 							href="https://dystopi.gitbook.io/dystopi-whitepaper-1/team"
 							className="mr-0 ml-auto 3xl:transform 3xl:scale-[240%]"
+							prefetch={false}
 						>
 							<MdOutlineArrowForward
 								size={24}
