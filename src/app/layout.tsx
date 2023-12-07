@@ -41,7 +41,8 @@ const chillax = localFont({
 
 export const metadata: Metadata = {
   title: "Dystopi",
-  description: "Dystopi",
+  description:
+    "Dystopi - Get ready to be rewarded for your bravery in the war for Dyseum tokens! Dyseum is a currency that is accepted by all four members of the alliance, making it the perfect tool for financing the war, producing weapons, and distributing rewards.",
 };
 
 export default function RootLayout({
