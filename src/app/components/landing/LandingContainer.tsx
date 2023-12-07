@@ -5,6 +5,8 @@ import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import { FaStarOfLife } from "react-icons/fa";
 import { Karla } from "next/font/google";
+import CountdownTimer from "./CountDownTimer";
+import { Suspense } from "react";
 
 const karla = Karla({ subsets: ["latin"] });
 
@@ -21,7 +23,7 @@ const LandingContainer = () => {
         src="/images/landing-bg.png"
         alt="dystopi character"
         fill
-        className="relative -z-10 object-cover object-left"
+        className="relative -z-10 object-cover object-center"
         priority
       />
       <div className="flex -translate-y-16 transform flex-col items-center justify-center p-6 lg:-translate-y-24 xl:-translate-y-48 4xl:absolute 4xl:left-1/2 4xl:top-1/2 4xl:-translate-x-1/2 4xl:-translate-y-1/2">
@@ -55,10 +57,14 @@ const LandingContainer = () => {
           href="https://forms.gle/uYBTeUG3PV5SArEt5"
           target="_blank"
           prefetch={false}
-          className="text-zinc-950 rounded-full bg-dystopi-yellow px-10 py-2 text-sm text-dystopi-black md:text-base 4xl:text-3xl"
+          className="text-zinc-950 mb-8 rounded-full bg-dystopi-yellow px-10 py-2 text-sm text-dystopi-black md:text-base 4xl:text-3xl"
         >
           JOIN WHITELIST
         </Link>
+
+        <Suspense>
+          <CountdownTimer />
+        </Suspense>
       </div>
       {isMobile ? (
         <div className="absolute bottom-24 left-0 flex w-full items-center justify-center gap-8 bg-gradient-to-r from-dystopi-yellow/25 via-dystopi-yellow to-dystopi-yellow/25 py-4 before:absolute before:-top-2 before:left-0 before:h-0.5 before:w-full before:bg-gradient-to-r before:from-dystopi-yellow/25 before:via-dystopi-yellow before:to-dystopi-yellow/25 after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-full after:bg-gradient-to-r after:from-dystopi-yellow/25 after:via-dystopi-yellow after:to-dystopi-yellow/25">
