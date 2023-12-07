@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import dayjs from "dayjs";
 
 const CountdownTimer = () => {
-  const targetDate = dayjs("2023-12-12T00:00:00");
+  const targetDate = dayjs("2023-12-11T21:00:00");
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
   const [mounted, setMounted] = useState(false);
 
