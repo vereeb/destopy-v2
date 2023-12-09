@@ -44,10 +44,10 @@ const LandingContainer = () => {
           className={`${vanguard.className} flex flex-wrap items-center justify-center text-3xl font-bold text-dystopi-yellow lg:text-6xl 2xl:text-8xl`}
         >
           <span className="mr-1 translate-y-1 transform font-mono lg:translate-y-2 3xl:lg:translate-y-3">
-            $
+            
           </span>
-          <span className="mr-2">500 000</span>
-          <span>AIRDROP</span>
+          <span className="mr-2"></span>
+          <span></span>
         </p>
         <p
           className={`${vanguard.className} mb-12 text-3xl font-bold md:text-6xl lg:mb-6 lg:text-6xl 2xl:text-8xl`}
